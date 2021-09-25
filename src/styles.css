@@ -29,9 +29,11 @@ p {
 }
 
 .todo_element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 10px 0 10px 0;
 }
 
 .todo_element:not(:last-child) {
@@ -42,12 +44,15 @@ p {
 
 .todo_element_title {
   padding: 10px;
+  flex: 1;
+  padding-left: 30px;
 }
 
 .add_task_wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -56,4 +61,17 @@ p {
   margin: 0;
   padding: 0;
   margin-right: 10px;
+}
+
+.task_input {
+  flex: 0.5
+}
+
+.todo_element_buttons {
+  margin-right: 30px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
